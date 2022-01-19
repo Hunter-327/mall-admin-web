@@ -418,7 +418,7 @@
       },
       getProductCateList() {
         fetchListWithChildren().then(response => {
-          let list = response.data;
+          let list = response.data.list;
           this.productCateOptions = [];
           for (let i = 0; i < list.length; i++) {
             let children = [];

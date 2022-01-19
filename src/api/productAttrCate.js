@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 export function fetchList(params) {
   return request({
-    url:'/productAttribute/category/list',
+    url:'/api/v1.0/productAttributeCategory/list',
     method:'get',
     params:params
   })

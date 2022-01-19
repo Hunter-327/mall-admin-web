@@ -110,7 +110,7 @@
       },
       getSubjectList() {
         fetchSubjectList().then(response => {
-          let list = response.data;
+          let list = response.data.list;
           for (let i = 0; i < list.length; i++) {
             this.subjectList.push({
               label: list[i].title,
@@ -121,7 +121,7 @@
       },
       getPrefrenceAreaList() {
         fetchPrefrenceAreaList().then(response=>{
-          let list = response.data;
+          let list = response.data.list;
           for (let i = 0; i < list.length; i++) {
             this.prefrenceAreaList.push({
               label: list[i].name,
