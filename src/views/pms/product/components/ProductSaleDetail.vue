@@ -191,8 +191,8 @@
       } else {
         fetchMemberLevelList({defaultStatus: 0}).then(response => {
           let memberPriceList = [];
-          for (let i = 0; i < response.data.length; i++) {
-            let item = response.data[i];
+          for (let i = 0; i < response.data.list.length; i++) {
+            let item = response.data.list[i];
             memberPriceList.push({memberLevelId: item.id, memberLevelName: item.name})
           }
           this.value.memberPriceList = memberPriceList;
